@@ -29,8 +29,8 @@ A simple and efficient ComfyUI integration for **DreamID-V**.
 3.  **Generate**: Connect inputs and run.
 
 ### Screenshots
-![Workflow Example](<img width="4249" height="2225" alt="workflow (15)" src="https://github.com/user-attachments/assets/9b6f057e-3841-4430-8307-d148f5150513" />)
-
+![Workflow Example]
+<img width="4249" height="2225" alt="workflow (15)" src="https://github.com/user-attachments/assets/eaa3a81f-822f-4c75-bc5a-d3c83bb62e5e" />
 
 ---
 
@@ -61,7 +61,8 @@ A simple and efficient ComfyUI integration for **DreamID-V**.
 3.  **生成视频**：连接各节点并开始生成。
 
 ### 节点截图
-![Workflow Screenshot](<img width="4249" height="2225" alt="workflow (15)" src="https://github.com/user-attachments/assets/9b6f057e-3841-4430-8307-d148f5150513" />)
+![Workflow Screenshot]
+<img width="4249" height="2225" alt="workflow (15)" src="https://github.com/user-attachments/assets/eaa3a81f-822f-4c75-bc5a-d3c83bb62e5e" />
 
 ## Credits
 Wrapper for [DreamID-V](https://github.com/bytedance/DreamID-V).
