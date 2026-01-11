@@ -1,0 +1,1442 @@
+{
+  "id": "a9c87fc4-1128-4024-9f5b-bab2cd543b36",
+  "revision": 0,
+  "last_node_id": 40,
+  "last_link_id": 69,
+  "nodes": [
+    {
+      "id": 22,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        1106.815343703505,
+        639.8018831770208
+      ],
+      "size": [
+        315,
+        514
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 35
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d",
+        "Node name for S&R": "VHS_VideoCombine",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "DreamIDV",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 20,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DreamIDV_00008.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "DreamIDV_00008.png",
+            "fullpath": "C:\\Users\\cmept\\AppData\\Local\\Temp\\latentsync_adc713b0\\DreamIDV_00008.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 37,
+      "type": "ImageResizeKJv2",
+      "pos": [
+        439.74611758032273,
+        637.2726719261814
+      ],
+      "size": [
+        270,
+        336
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 53
+        },
+        {
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "widget": {
+            "name": "width"
+          },
+          "link": 58
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "widget": {
+            "name": "height"
+          },
+          "link": 59
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            55,
+            56,
+            57
+          ]
+        },
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            60
+          ]
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            61
+          ]
+        },
+        {
+          "name": "mask",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "7b1327192e4729085788a3020a9cbb095e0c7811",
+        "Node name for S&R": "ImageResizeKJv2",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        512,
+        512,
+        "nearest-exact",
+        "crop",
+        "0, 0, 0",
+        "center",
+        2,
+        "cpu",
+        "<tr><td>Output: </td><td><b>81</b> x <b>848</b> x <b>480 | 377.31MB</b></td></tr>"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        2013.7839706427555,
+        37.12167012002611
+      ],
+      "size": [
+        315,
+        514
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 41
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 68
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d",
+        "Node name for S&R": "VHS_VideoCombine",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "DreamIDV",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 20,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DreamIDV_00056-audio.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "DreamIDV_00056.png",
+            "fullpath": "I:\\ComfyUI_windows_portable\\ComfyUI\\output\\DreamIDV_00056-audio.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 40,
+      "type": "Reroute",
+      "pos": [
+        1682.428138146956,
+        408.2534671617735
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 67
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "AUDIO",
+          "links": [
+            68,
+            69
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false,
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      }
+    },
+    {
+      "id": 31,
+      "type": "VAEDecode",
+      "pos": [
+        1229.872662825543,
+        255.66442543667313
+      ],
+      "size": [
+        140,
+        46
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 39
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 40
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            41,
+            65
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0",
+        "Node name for S&R": "VAEDecode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 39,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        2011.2211204722614,
+        679.3520542550283
+      ],
+      "size": [
+        315,
+        488
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 66
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": 69
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d",
+        "Node name for S&R": "VHS_VideoCombine",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "DreamIDV",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 20,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": true,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DreamIDV_00048-audio.mp4",
+            "subfolder": "",
+            "type": "output",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "DreamIDV_00048.png",
+            "fullpath": "I:\\ComfyUI_windows_portable\\ComfyUI\\output\\DreamIDV_00048-audio.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 38,
+      "type": "ImageConcatMulti",
+      "pos": [
+        1538.028983298243,
+        985.3685737599741
+      ],
+      "size": [
+        270,
+        190
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 64
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 65
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            66
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "7b1327192e4729085788a3020a9cbb095e0c7811",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        2,
+        "right",
+        true,
+        null
+      ]
+    },
+    {
+      "id": 30,
+      "type": "VAELoader",
+      "pos": [
+        91.93320564375355,
+        151.67601342086408
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            38,
+            40
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0",
+        "Node name for S&R": "VAELoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "wan_2.1_vae.safetensors"
+      ]
+    },
+    {
+      "id": 19,
+      "type": "DreamIDV_Sampler_Wrapper_TTP",
+      "pos": [
+        795.1924899066984,
+        117.39590075780406
+      ],
+      "size": [
+        302.3326171875,
+        418
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "dreamidv_wrapper",
+          "type": "DREAMIDV_WRAPPER",
+          "link": 37
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 38
+        },
+        {
+          "name": "pose_video",
+          "type": "IMAGE",
+          "link": 32
+        },
+        {
+          "name": "ref_video",
+          "type": "IMAGE",
+          "link": 55
+        },
+        {
+          "name": "ref_image",
+          "type": "IMAGE",
+          "link": 27
+        },
+        {
+          "name": "mask_video",
+          "type": "IMAGE",
+          "link": 28
+        },
+        {
+          "name": "frame_num",
+          "type": "INT",
+          "widget": {
+            "name": "frame_num"
+          },
+          "link": 47
+        },
+        {
+          "name": "custom_width",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": 60
+        },
+        {
+          "name": "custom_height",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": 61
+        },
+        {
+          "name": "pose_embedding",
+          "type": "POSE_EMBEDDING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "links": [
+            39
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DreamIDV_Sampler_Wrapper_TTP",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "custom",
+        81,
+        20,
+        5,
+        5,
+        107,
+        "fixed",
+        false,
+        false,
+        720,
+        720
+      ]
+    },
+    {
+      "id": 23,
+      "type": "VHS_VideoCombine",
+      "pos": [
+        763.5402938792083,
+        625.0071925230169
+      ],
+      "size": [
+        315,
+        514
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "name": "audio",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Filenames",
+          "type": "VHS_FILENAMES",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d",
+        "Node name for S&R": "VHS_VideoCombine",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": {
+        "frame_rate": 16,
+        "loop_count": 0,
+        "filename_prefix": "DreamIDV",
+        "format": "video/h264-mp4",
+        "pix_fmt": "yuv420p",
+        "crf": 20,
+        "save_metadata": true,
+        "trim_to_audio": false,
+        "pingpong": false,
+        "save_output": false,
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "DreamIDV_00007.mp4",
+            "subfolder": "",
+            "type": "temp",
+            "format": "video/h264-mp4",
+            "frame_rate": 16,
+            "workflow": "DreamIDV_00007.png",
+            "fullpath": "C:\\Users\\cmept\\AppData\\Local\\Temp\\latentsync_adc713b0\\DreamIDV_00007.mp4"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "type": "DreamIDV_PoseExtractor_TTP",
+      "pos": [
+        420,
+        270
+      ],
+      "size": [
+        315,
+        170
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "reference_video",
+          "type": "IMAGE",
+          "link": 56
+        },
+        {
+          "name": "reference_image",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "max_frames",
+          "type": "INT",
+          "widget": {
+            "name": "max_frames"
+          },
+          "link": 46
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pose_video",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            32,
+            34,
+            62
+          ]
+        },
+        {
+          "name": "mask_video",
+          "type": "IMAGE",
+          "slot_index": 1,
+          "links": [
+            28,
+            35,
+            63
+          ]
+        },
+        {
+          "name": "actual_frames",
+          "type": "INT",
+          "links": [
+            47
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DreamIDV_PoseExtractor_TTP",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        81,
+        true,
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "id": 13,
+      "type": "VHS_LoadVideo",
+      "pos": [
+        56.116520307984686,
+        663.4571939035083
+      ],
+      "size": [
+        315,
+        490
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "meta_batch",
+          "shape": 7,
+          "type": "VHS_BatchManager",
+          "link": null
+        },
+        {
+          "name": "vae",
+          "shape": 7,
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "frame_load_cap",
+          "type": "INT",
+          "widget": {
+            "name": "frame_load_cap"
+          },
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            53
+          ]
+        },
+        {
+          "name": "frame_count",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "name": "audio",
+          "type": "AUDIO",
+          "links": [
+            67
+          ]
+        },
+        {
+          "name": "video_info",
+          "type": "VHS_VIDEOINFO",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-videohelpersuite",
+        "ver": "3234937ff5f3ca19068aaba5042771514de2429d",
+        "Node name for S&R": "VHS_LoadVideo",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": {
+        "video": "WanVideo2_1_InfiniteTalk_00004-audio.mp4",
+        "force_rate": 16,
+        "custom_width": 0,
+        "custom_height": 0,
+        "frame_load_cap": 81,
+        "skip_first_frames": 0,
+        "select_every_nth": 1,
+        "format": "Wan",
+        "videopreview": {
+          "hidden": false,
+          "paused": false,
+          "params": {
+            "filename": "WanVideo2_1_InfiniteTalk_00004-audio.mp4",
+            "type": "input",
+            "format": "video/mp4",
+            "frame_load_cap": 81,
+            "skip_first_frames": 0,
+            "select_every_nth": 1,
+            "force_rate": 16
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        52.097946387395226,
+        274.5698830955673
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "slot_index": 0,
+          "links": [
+            1,
+            27,
+            51
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.7.0",
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.5.2",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        "pasted/image (2374).png",
+        "image"
+      ]
+    },
+    {
+      "id": 36,
+      "type": "ImageConcatMulti",
+      "pos": [
+        1540.052583658862,
+        721.0300442556488
+      ],
+      "size": [
+        270,
+        190
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 51
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 57
+        },
+        {
+          "name": "image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 62
+        },
+        {
+          "name": "image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 63
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            64
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "7b1327192e4729085788a3020a9cbb095e0c7811",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        4,
+        "down",
+        true,
+        null
+      ]
+    },
+    {
+      "id": 29,
+      "type": "DreamIDV_ModelLoader_Wrapper_TTP",
+      "pos": [
+        55.63216303679966,
+        -39.870460396381056
+      ],
+      "size": [
+        339.2466796875,
+        154
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "dreamidv_wrapper",
+          "type": "DREAMIDV_WRAPPER",
+          "links": [
+            37
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "DreamIDV_ModelLoader_Wrapper_TTP",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.5.2"
+        }
+      },
+      "widgets_values": [
+        "dreamidv.pth",
+        "models_t5_umt5-xxl-enc-bf16.pth",
+        "bf16",
+        "disabled",
+        "sageattn"
+      ]
+    },
+    {
+      "id": 33,
+      "type": "INTConstant",
+      "pos": [
+        -306.6195263848959,
+        739.9977705023133
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            58
+          ]
+        }
+      ],
+      "title": "Width",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "37659859825cea55940a58110525795ce5deb8be",
+        "Node name for S&R": "INTConstant",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        848
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 32,
+      "type": "INTConstant",
+      "pos": [
+        -305.183729595041,
+        862.8278665330081
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            59
+          ]
+        }
+      ],
+      "title": "Height",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "37659859825cea55940a58110525795ce5deb8be",
+        "Node name for S&R": "INTConstant",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        480
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    },
+    {
+      "id": 34,
+      "type": "INTConstant",
+      "pos": [
+        -303.0799258646132,
+        991.6203152580929
+      ],
+      "size": [
+        210,
+        58
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "links": [
+            45,
+            46
+          ]
+        }
+      ],
+      "title": "Frames",
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "37659859825cea55940a58110525795ce5deb8be",
+        "Node name for S&R": "INTConstant",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "version": "7.3",
+          "input_ue_unconnectable": {}
+        }
+      },
+      "widgets_values": [
+        81
+      ],
+      "color": "#1b4669",
+      "bgcolor": "#29699c"
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      5,
+      1,
+      "IMAGE"
+    ],
+    [
+      27,
+      3,
+      0,
+      19,
+      4,
+      "IMAGE"
+    ],
+    [
+      28,
+      5,
+      1,
+      19,
+      5,
+      "IMAGE"
+    ],
+    [
+      32,
+      5,
+      0,
+      19,
+      2,
+      "IMAGE"
+    ],
+    [
+      34,
+      5,
+      0,
+      23,
+      0,
+      "IMAGE"
+    ],
+    [
+      35,
+      5,
+      1,
+      22,
+      0,
+      "IMAGE"
+    ],
+    [
+      37,
+      29,
+      0,
+      19,
+      0,
+      "DREAMIDV_WRAPPER"
+    ],
+    [
+      38,
+      30,
+      0,
+      19,
+      1,
+      "VAE"
+    ],
+    [
+      39,
+      19,
+      0,
+      31,
+      0,
+      "LATENT"
+    ],
+    [
+      40,
+      30,
+      0,
+      31,
+      1,
+      "VAE"
+    ],
+    [
+      41,
+      31,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      45,
+      34,
+      0,
+      13,
+      2,
+      "INT"
+    ],
+    [
+      46,
+      34,
+      0,
+      5,
+      2,
+      "INT"
+    ],
+    [
+      47,
+      5,
+      2,
+      19,
+      6,
+      "INT"
+    ],
+    [
+      51,
+      3,
+      0,
+      36,
+      0,
+      "IMAGE"
+    ],
+    [
+      53,
+      13,
+      0,
+      37,
+      0,
+      "IMAGE"
+    ],
+    [
+      55,
+      37,
+      0,
+      19,
+      3,
+      "IMAGE"
+    ],
+    [
+      56,
+      37,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      37,
+      0,
+      36,
+      1,
+      "IMAGE"
+    ],
+    [
+      58,
+      33,
+      0,
+      37,
+      2,
+      "INT"
+    ],
+    [
+      59,
+      32,
+      0,
+      37,
+      3,
+      "INT"
+    ],
+    [
+      60,
+      37,
+      1,
+      19,
+      7,
+      "INT"
+    ],
+    [
+      61,
+      37,
+      2,
+      19,
+      8,
+      "INT"
+    ],
+    [
+      62,
+      5,
+      0,
+      36,
+      2,
+      "IMAGE"
+    ],
+    [
+      63,
+      5,
+      1,
+      36,
+      3,
+      "IMAGE"
+    ],
+    [
+      64,
+      36,
+      0,
+      38,
+      0,
+      "IMAGE"
+    ],
+    [
+      65,
+      31,
+      0,
+      38,
+      1,
+      "IMAGE"
+    ],
+    [
+      66,
+      38,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      67,
+      13,
+      2,
+      40,
+      0,
+      "AUDIO"
+    ],
+    [
+      68,
+      40,
+      0,
+      11,
+      1,
+      "AUDIO"
+    ],
+    [
+      69,
+      40,
+      0,
+      39,
+      1,
+      "AUDIO"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "workflowRendererVersion": "LG",
+    "ue_links": [],
+    "ds": {
+      "scale": 0.8769226950000064,
+      "offset": [
+        239.97784748412877,
+        230.25938893773056
+      ]
+    },
+    "links_added_by_ue": [],
+    "frontendVersion": "1.35.9",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}

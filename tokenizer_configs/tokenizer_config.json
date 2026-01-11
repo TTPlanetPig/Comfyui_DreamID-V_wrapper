@@ -1,0 +1,7 @@
+{
+    "model_max_length": 512,
+    "legacy": true,
+    "model_type": "t5",
+    "padding_side": "right",
+    "truncation_side": "right"
+}
